@@ -57,10 +57,7 @@ app.get(signOut,  (req, res) => {
             .redirect('/')
     }).catch(function () {
         res.redirect("/v1/cars")
-    });
-    // return res
-    //     .clearCookie("access_token")
-    //     .redirect('/')
+    });    
 });
 
 app.get('*', function(req, res){
